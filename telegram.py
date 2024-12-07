@@ -29,6 +29,7 @@ def content(message):
     /Portfolio -> To view my Portfolio
     /Github -> To view my Github account
     /Contact_Number -> To view my Contact Number
+    /For my gmail -> To view my Gmail
                  
     """)
 
@@ -60,6 +61,9 @@ def Github(message):
 def Contact_Number(message):
     bot.reply_to(message,"01568380004")
 
+@bot.message_handler(['For my gmail']) 
+def For_my_gmail(message):
+    bot.reply_to(message,"Yes,Sure! You use my bot for calculate any number")
 
 @bot.message_handler() 
 def custom(message):
